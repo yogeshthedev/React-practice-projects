@@ -1,0 +1,19 @@
+.home-container {
+  padding: 20px;
+  background: linear-gradient(to bottom, #1c1c1c, #121212);
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.home-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1db954; /* Spotify green accent */
+}
+
+.songs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}

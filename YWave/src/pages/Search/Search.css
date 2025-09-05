@@ -1,0 +1,26 @@
+.search-container {
+  padding: 20px;
+  background: linear-gradient(to bottom, #1c1c1c, #121212);
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+.search-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1db954; /* Same green accent */
+}
+
+.songs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.search-message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  color: #b3b3b3;
+}

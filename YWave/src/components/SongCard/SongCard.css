@@ -1,0 +1,48 @@
+.song-card {
+  position: relative;
+  background: #181818;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.song-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.song-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.song-card h3 {
+  font-size: 1rem;
+  margin: 10px;
+  color: #fff;
+}
+
+.song-card p {
+  font-size: 0.85rem;
+  margin: 0 10px 10px;
+  color: #b3b3b3;
+}
+
+/* Play Icon overlay */
+.song-card::after {
+  content: "▶";
+  position: absolute;
+  font-size: 2rem;
+  color: #1db954;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.song-card:hover::after {
+  opacity: 1;
+}
